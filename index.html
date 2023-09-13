@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("morro.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .question-text {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .answer-input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .submit-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #ffffff;
+      background-color: #007bff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .reward-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .reward-text {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .reward-link {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #ffffff;
+      background-color: #007bff;
+      border: none;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz</h1>
+    <div class="question" id="question-container">
+      <p class="question-text" id="question"></p>
+      <input type="text" class="answer-input" id="answer-input">
+      <button class="submit-button" id="submit-button">Submit</button>
+    </div>
+    <div class="result" id="result-container" style="display: none;">
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
